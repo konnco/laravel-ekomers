@@ -1,14 +1,14 @@
 {
-  "name": "konnco/laravel-onimage",
-  "description": "Boost up your coding speed, no worries about managing image anymore.",
+  "name": "konnco/laravel-ekomers",
+  "description": "Cloneing Package from Woocommerce.",
   "type": "library",
   "license": "MIT",
   "keywords": [
     "laravel",
     "php",
-    "eloquent",
+    "woocommerce",
     "library",
-    "translate"
+    "ecommerce"
   ],
   "authors": [
     {
@@ -23,8 +23,7 @@
     "illuminate/contracts": "5.8.* || ^6.0",
     "illuminate/database": "5.8.* || ^6.0",
     "illuminate/support": "5.8.* || ^6.0",
-    "intervention/image": "^2.5",
-    "ralouphie/mimey": "^2.1"
+    "konnco/laravel-transeloquent": "^0.1.8@alpha"
   },
   "config": {
     "sort-packages": true
@@ -35,18 +34,18 @@
   },
   "autoload": {
     "psr-4": {
-      "Konnco\\Onimage\\": "src/"
+      "Konnco\\Ekomers\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Konnco\\Onimage\\Tests\\": "tests/"
+      "Konnco\\Ekomers\\Tests\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Konnco\\Onimage\\OnimageServiceProvider"
+        "Konnco\\Ekomers\\EkomersServiceProvider"
       ]
     }
   },

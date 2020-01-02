@@ -1,10 +1,10 @@
 <?php
 
-namespace Konnco\Onimage;
+namespace Konnco\Ekomers;
 
 use Illuminate\Support\ServiceProvider;
 
-class OnimageServiceProvider extends ServiceProvider
+class EkomersServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -30,17 +30,17 @@ class OnimageServiceProvider extends ServiceProvider
 
     public function publishMigrations()
     {
-        $this->publishes([__DIR__.'/migrations' => database_path('migrations')], 'onimage');
+        $this->publishes([__DIR__.'/migrations' => database_path('migrations')], 'ekomers');
     }
 
     public function publishModels()
     {
-        $this->publishes([__DIR__.'/models' => app_path()], 'onimage');
+        $this->publishes([__DIR__.'/models' => app_path()], 'ekomers');
     }
 
     public function publishConfig()
     {
-        $this->publishes([__DIR__.'/config/onimage.php' => config_path('onimage.php')], 'onimage');
-        $this->mergeConfigFrom(__DIR__.'/config/onimage.php', 'onimage');
+        $this->publishes([__DIR__.'/config/ekomers.php' => config_path('ekomers.php')], 'ekomers');
+        $this->mergeConfigFrom(__DIR__.'/config/ekomers.php', 'ekomers');
     }
 }
